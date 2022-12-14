@@ -48,7 +48,7 @@ My replica to YouTube App, one of the largest online video streaming and sharing
 | node js 16.15.1+  | ✅                 |
 | npm 5.6.1+        | :white_check_mark: |
 | yarn 3.0.0+       | ✅                 |
-
+# Method to Run & Test the Project Locally
 
 
 
