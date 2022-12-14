@@ -23,5 +23,4 @@ const SearchFeed = () => {
     </Box>
   );
 };
-
 export default SearchFeed;
