@@ -39,7 +39,7 @@ My replica to YouTube App, one of the largest online video streaming and sharing
 [Testing Result](https://github.com/KrystalZhang612/KrystalZhang-KTube-App-YouTube2.0/blob/main/README.md#testing-result)<br/> 
 [Tags and Topics]()<br/>
 # Contribution
-[Author]()
+[Author](https://github.com/KrystalZhang612/KrystalZhang-KTube-App-YouTube2.0/blob/main/README.md#author)
 # Compatiability 
 
 | Version           | Supported          |
