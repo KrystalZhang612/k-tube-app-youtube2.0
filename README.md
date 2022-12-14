@@ -34,7 +34,7 @@ My replica to YouTube App, one of the largest online video streaming and sharing
 # Build
 [Method to Run & Test the Project Locally](https://github.com/KrystalZhang612/KrystalZhang-KTube-App-YouTube2.0/blob/main/README.md#method-to-run--test-the-project-locally)<br/> 
 [Prerequisites & Setups](https://github.com/KrystalZhang612/KrystalZhang-KTube-App-YouTube2.0/blob/main/README.md#prerequisites--setups)<br/>
-[Debugging&Troubleshooting]()<br/> 
+[Debugging&Troubleshooting](https://github.com/KrystalZhang612/KrystalZhang-KTube-App-YouTube2.0/blob/main/README.md#debugging--troubleshooting)<br/> 
 [Synchronous Developing Notes]()<br/> 
 [Testing Result]()<br/> 
 [Tags and Topics]()<br/>
@@ -106,7 +106,15 @@ Audit all dependencies to the latest version:
 ```bash 
 npm install --legacy-peer-deps
 ```
+Install needed font at https://mui.com/material-ui/getting-started/installation/
 # Debugging & Troubleshooting 
+ crbugs deprecated npm start not working error. DEBUGGING: Install React-Player running:
+ ```bash
+ yarn add react-player.
+ ```
+ # Synchronous Developing Notes
+ 
+ 
 
 
 
