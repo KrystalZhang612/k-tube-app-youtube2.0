@@ -68,7 +68,7 @@ My replica to YouTube App, one of the largest online video streaming and sharing
 [Vscode 1.74](https://code.visualstudio.com/updates/v1_74)<br/>
 [ReactJS](https://reactjs.org/)<br/> 
 [RapidAPI Vscode Client](https://rapidapi.com/guides/categories/rapidapi-client-vscode)<br/> 
-[Node.JS](npm/npx https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)<br/> 
+[Node.JS npm/npx](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)<br/> 
 [Yarn](https://classic.yarnpkg.com/lang/en/docs/install/#mac-stable)<br/> 
 [Material UI](https://mui.com/)<br/> 
 [JavaScript](https://www.javascript.com/)<br/> 
@@ -84,6 +84,7 @@ My replica to YouTube App, one of the largest online video streaming and sharing
 </div>
 
 
+# Prerequisites & Setups
 
 
 
