@@ -64,6 +64,27 @@ My replica to YouTube App, one of the largest online video streaming and sharing
 ### Terminate the server by CONTROL+C
 ### Have fun browsing, searching, and streaming KTube videos!
 
+# 🛠️ Developing Languages, Tools, and Techniques Needed
+[Vscode 1.74](https://code.visualstudio.com/updates/v1_74)<br/>
+[ReactJS](https://reactjs.org/)<br/> 
+[RapidAPI Vscode Client](https://rapidapi.com/guides/categories/rapidapi-client-vscode)<br/> 
+[Node.JS](npm/npx https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)<br/> 
+[Yarn](https://classic.yarnpkg.com/lang/en/docs/install/#mac-stable)<br/> 
+[Material UI](https://mui.com/)<br/> 
+[JavaScript](https://www.javascript.com/)<br/> 
+[ES7+ React/Redux/React-Native snippets Vscode Extension](https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets)<br/> 
+[npm Intellisense Vscode Extension](https://marketplace.visualstudio.com/items?itemName=christian-kohler.npm-intellisense)<br/> 
+[RapidAPI YouTubeV3 API Key](https://rapidapi.com/ytdlfree/api/youtube-v31)<br/>
+<div>
+  <img src = "https://github.com/devicons/devicon/blob/master/icons/vscode/vscode-original.svg" title = "VSCODE" width = "60" height = "60" />&nbsp; 
+  <img src = "https://github.com/devicons/devicon/blob/master/icons/react/react-original.svg" title = "REACTJS" width = "60" height = "60" />&nbsp; 
+  <img src = "https://github.com/devicons/devicon/blob/master/icons/npm/npm-original-wordmark.svg" title = "NODEJS NPM NPX" width = "60" height = "60" />&nbsp; 
+  <img src = "https://github.com/devicons/devicon/blob/master/icons/yarn/yarn-original.svg" title = "YARN" width = "60" height = "60" />&nbsp; 
+  <img src = "https://github.com/devicons/devicon/blob/master/icons/javascript/javascript-original.svg" title = "JAVASCRIPT" width = "60" height = "60" />&nbsp; 
+</div>
+
+
+
 
 
 
