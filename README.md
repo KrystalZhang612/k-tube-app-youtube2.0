@@ -32,7 +32,7 @@ My replica to YouTube App, one of the largest online video streaming and sharing
 
 
 # Build
-[Method to Run & Test the Project Locally]()<br/> 
+[Method to Run & Test the Project Locally](https://github.com/KrystalZhang612/KrystalZhang-KTube-App-YouTube2.0/blob/main/README.md#method-to-run--test-the-project-locally)<br/> 
 [Prerequisites & Setups]()<br/>
 [Debugging&Troubleshooting]()<br/> 
 [Synchronous Developing Notes]()<br/> 
@@ -49,6 +49,16 @@ My replica to YouTube App, one of the largest online video streaming and sharing
 | npm 5.6.1+        | :white_check_mark: |
 | yarn 3.0.0+       | ✅                 |
 # Method to Run & Test the Project Locally
+### Download `git version 2.13.1 or higher`. Download git at https://git-scm.com/downloads
+### To check your version of git, run: `git --version`
+### Download `yarn 3.0. 0 or higher`.
+### Download `node 16.15.1 or higher`. Download node at https://nodejs.org/en/download/
+### To check your version of node, run: `node --version`
+### Download `npm version 5.6.1 or higher` after installing node.
+### To check your version of npm, run: `npm --version`
+### Download the entire project folder and open it with any IDE.
+
+
 
 
 
