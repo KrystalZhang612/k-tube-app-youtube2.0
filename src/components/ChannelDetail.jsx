@@ -15,10 +15,8 @@ const ChannelDetail = () => {
       const videosData = await fetchFromAPI(`search?channelId=${id}&part=snippet%2Cid&order=date`);
       setVideos(videosData?.items);
     };
-
     fetchResults();
   }, [id]);
-
   return (
     <Box minHeight="95vh">
       <Box>
@@ -36,5 +34,4 @@ const ChannelDetail = () => {
     </Box>
   );
 };
-
 export default ChannelDetail;
