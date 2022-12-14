@@ -53,5 +53,4 @@ const VideoDetail = () => {
     </Box>
   );
 };
-
 export default VideoDetail;
