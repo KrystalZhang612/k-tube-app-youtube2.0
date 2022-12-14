@@ -36,7 +36,7 @@ My replica to YouTube App, one of the largest online video streaming and sharing
 [Prerequisites & Setups](https://github.com/KrystalZhang612/KrystalZhang-KTube-App-YouTube2.0/blob/main/README.md#prerequisites--setups)<br/>
 [Debugging&Troubleshooting](https://github.com/KrystalZhang612/KrystalZhang-KTube-App-YouTube2.0/blob/main/README.md#debugging--troubleshooting)<br/> 
 [Synchronous Developing Notes](https://github.com/KrystalZhang612/KrystalZhang-KTube-App-YouTube2.0/blob/main/README.md#synchronous-developing-notes)<br/> 
-[Testing Result]()<br/> 
+[Testing Result](https://github.com/KrystalZhang612/KrystalZhang-KTube-App-YouTube2.0/blob/main/README.md#testing-result)<br/> 
 [Tags and Topics]()<br/>
 # Contribution
 [Author]()
@@ -221,6 +221,16 @@ p={2}>
 [videos are playable.PNG](https://github.com/KrystalZhang612/KrystalZhang-KTube-App-YouTube2.0/blob/main/testing-result-k-tube-app/videos%20are%20playable.PNG)<br/>
 
 # Testing Result 
+<p align = "center">
+  <img src = "https://github.com/KrystalZhang612/KrystalZhang-KTube-App-YouTube2.0/blob/main/testing-result-k-tube-app/sidebar%20done%20customizing.PNG">&nbsp; 
+  <img src = "https://github.com/KrystalZhang612/KrystalZhang-KTube-App-YouTube2.0/blob/main/testing-result-k-tube-app/videos%20of%20categories%20fetched.PNG">&nbsp; 
+  <img src = "https://github.com/KrystalZhang612/KrystalZhang-KTube-App-YouTube2.0/blob/main/testing-result-k-tube-app/channel%20details%20fetched.PNG">&nbsp; 
+  <img src = "https://github.com/KrystalZhang612/KrystalZhang-KTube-App-YouTube2.0/blob/main/testing-result-k-tube-app/searching%20feed%20works%2C%20showing%20result.PNG">&nsbp; 
+  <img src = "https://github.com/KrystalZhang612/KrystalZhang-KTube-App-YouTube2.0/blob/main/testing-result-k-tube-app/videos%20are%20playable.PNG">&nbsp; 
+</p>
+
+
+
 
 
 
