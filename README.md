@@ -57,6 +57,13 @@ My replica to YouTube App, one of the largest online video streaming and sharing
 ### Download `npm version 5.6.1 or higher` after installing node.
 ### To check your version of npm, run: `npm --version`
 ### Download the entire project folder and open it with any IDE.
+### Obtain a free YouTube API Key at https://rapidapi.com/ytdlfree/api/youtube-v31
+### Replace `YOUR OWN YOUTUBE KEY` in fetchFromAPI.js with you obtained API key. 
+### Fetch your API in RapidAPI Client Vscode extension until it shows `200 OK`
+### Start the webserver to test KTube App by running: `npm start` at localhost:3000
+### Terminate the server by CONTROL+C
+### Have fun browsing, searching, and streaming KTube videos!
+
 
 
 
