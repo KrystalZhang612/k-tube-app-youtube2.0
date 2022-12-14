@@ -35,7 +35,7 @@ My replica to YouTube App, one of the largest online video streaming and sharing
 [Method to Run & Test the Project Locally](https://github.com/KrystalZhang612/KrystalZhang-KTube-App-YouTube2.0/blob/main/README.md#method-to-run--test-the-project-locally)<br/> 
 [Prerequisites & Setups](https://github.com/KrystalZhang612/KrystalZhang-KTube-App-YouTube2.0/blob/main/README.md#prerequisites--setups)<br/>
 [Debugging&Troubleshooting](https://github.com/KrystalZhang612/KrystalZhang-KTube-App-YouTube2.0/blob/main/README.md#debugging--troubleshooting)<br/> 
-[Synchronous Developing Notes]()<br/> 
+[Synchronous Developing Notes](https://github.com/KrystalZhang612/KrystalZhang-KTube-App-YouTube2.0/blob/main/README.md#synchronous-developing-notes)<br/> 
 [Testing Result]()<br/> 
 [Tags and Topics]()<br/>
 # Contribution
@@ -113,8 +113,116 @@ Install needed font at https://mui.com/material-ui/getting-started/installation/
  yarn add react-player.
  ```
  # Synchronous Developing Notes
+ ## ***Navbar Customization:***
+ Customize search bar text input and icon in [SearchBar.jsx](https://github.com/KrystalZhang612/KrystalZhang-KTube-App-YouTube2.0/blob/main/src/components/SearchBar.jsx):
+ ```JavaScript 
+   <input
+        className="search-bar"
+        placeholder="Search for videos on KTube..."
+        value=""
+        onChange={() => {}}
+      />
+      <IconButton type="submit" sx={{ p: '10px', color: 'red' }}>
+        <Search />
+      </IconButton>
+    </Paper>
+)
+```
+Navbar is done customizing.
+## ***Sidebar Customization:***
+Customize Sidebar by fetching sidebar sections from [constants.js](https://github.com/KrystalZhang612/KrystalZhang-KTube-App-YouTube2.0/blob/main/src/utils/constants.js) in [Sidebar.jsx](https://github.com/KrystalZhang612/KrystalZhang-KTube-App-YouTube2.0/blob/main/src/components/Sidebar.jsx):
+```JavaScript 
+ {categories.map((category) => (
+            <button
+                className="category-btn"
+                style={{
+                    background: category.name ===
+                        selectedCategory && '#FC1503',
+                    color: 'white'
+                }}
+                key={category.name}
+            >
+                <span style={{
+                    color: category.name ==
+                        selectedCategory ? 'white' : 'red',
+                    marginRight: '15px'
+```
+[sidebar done customizing.PNG](https://github.com/KrystalZhang612/KrystalZhang-KTube-App-YouTube2.0/blob/main/testing-result-k-tube-app/sidebar%20done%20customizing.PNG)<br/>
+Fetch API from RapidAPI, and design [VideoCard.jsx](https://github.com/KrystalZhang612/KrystalZhang-KTube-App-YouTube2.0/blob/main/src/components/VideoCard.jsx):
+```JavaScript 
+const VideoCard = ({ video: { id: { videoId }, snippet } }) => (
+    <Card sx={{ width: { xs: '100%', sm: '358px', md: "320px", },
+boxShadow: "none", borderRadius: 0 }}>
+        <Link to={videoId ? `/video/${videoId}` :
+`/video/cV2gBU6hKfY`}>
+            <CardMedia image={snippet?.thumbnails?.high?.url ||
+demoThumbnailUrl} alt={snippet?.title}
+```
+Design [ChannelCard.jsx](https://github.com/KrystalZhang612/KrystalZhang-KTube-App-YouTube2.0/blob/main/src/components/ChannelCard.jsx):
+```JavaScript 
+ sx={{
+            boxShadow: 'none',
+            borderRadius: '20px',
+            display: 'flex',
  
- 
+justifyContent: 'center',
+            alignItems: 'center',
+            width: { xs: '356px', md: '320px' },
+            height: '326px',
+            margin: 'auto',
+            marginTop,
+```
+Now the video page fetched based on categories successfully!<br/> 
+[videos of categories fetched.PNG](https://github.com/KrystalZhang612/KrystalZhang-KTube-App-YouTube2.0/blob/main/testing-result-k-tube-app/videos%20of%20categories%20fetched.PNG)<br/>
+## ***ChannelDetails Customization:***
+Fetch chanel details and API data in [ChannelDetail.jsx](https://github.com/KrystalZhang612/KrystalZhang-KTube-App-YouTube2.0/blob/main/src/components/ChannelDetail.jsx):
+```JavaScript 
+ useEffect(() => {
+    const fetchResults = async () => {
+      const data = await
+fetchFromAPI(`channels?part=snippet&id=${id}`);
+      setChannelDetail(data?.items[0]);
+      const videosData = await
+fetchFromAPI(`search?channelId=${id}&part=snippet%2Cid&order=date`);
+      setVideos(videosData?.items);
+    };
+```
+[channel details fetched.PNG](https://github.com/KrystalZhang612/KrystalZhang-KTube-App-YouTube2.0/blob/main/testing-result-k-tube-app/channel%20details%20fetched.PNG)<br/>
+## ***Search feed customization:***
+Customize feed searching option in [SearchFeed.jsx](https://github.com/KrystalZhang612/KrystalZhang-KTube-App-YouTube2.0/blob/main/src/components/SearchFeed.jsx):
+```JavaScript 
+const SearchFeed = () => {
+  const [videos, setVideos] = useState(null);
+  const { searchTerm } = useParams();
+  useEffect(() => {
+    fetchFromAPI(`search?part=snippet&q=${searchTerm}`)
+      .then((data) => setVideos(data.items))
+  }, [searchTerm]);
+  return (
+    <Box p={2} minHeight="95vh">
+      <Typography variant="h4" fontWeight={900} color="white" mb={3}
+ml={{ sm: "100px" }}>
+        Search Results for <span style={{ color: "#FC1503"
+}}>{searchTerm}</span> videos
+      </Typography>
+      <Box display="flex">
+```
+[searching feed works, showing results.PNG](https://github.com/KrystalZhang612/KrystalZhang-KTube-App-YouTube2.0/blob/main/testing-result-k-tube-app/searching%20feed%20works%2C%20showing%20result.PNG)<br/>
+To make the videos playable, fetch React Player in [VideoDetails.jsx](https://github.com/KrystalZhang612/KrystalZhang-KTube-App-YouTube2.0/blob/main/src/components/VideoDetail.jsx):
+```JavaScript 
+<Box sx={{ width: "100%", position: "sticky", top: "86px" }}>
+  
+<ReactPlayer url={`https://www.youtube.com/watch?v=${id}`}
+className="react-player" controls />
+           <Typography color="#fff" variant="h5" fontWeight="bold"
+p={2}>
+...
+```
+[videos are playable.PNG](https://github.com/KrystalZhang612/KrystalZhang-KTube-App-YouTube2.0/blob/main/testing-result-k-tube-app/videos%20are%20playable.PNG)<br/>
+
+# Testing Result 
+
+
 
 
 
