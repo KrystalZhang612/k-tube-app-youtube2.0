@@ -33,7 +33,7 @@ My replica to YouTube App, one of the largest online video streaming and sharing
 
 # Build
 [Method to Run & Test the Project Locally](https://github.com/KrystalZhang612/KrystalZhang-KTube-App-YouTube2.0/blob/main/README.md#method-to-run--test-the-project-locally)<br/> 
-[Prerequisites & Setups]()<br/>
+[Prerequisites & Setups](https://github.com/KrystalZhang612/KrystalZhang-KTube-App-YouTube2.0/blob/main/README.md#prerequisites--setups)<br/>
 [Debugging&Troubleshooting]()<br/> 
 [Synchronous Developing Notes]()<br/> 
 [Testing Result]()<br/> 
@@ -85,6 +85,29 @@ My replica to YouTube App, one of the largest online video streaming and sharing
 
 
 # Prerequisites & Setups
+Create React app in Vscode Terminal:
+```bash
+Create React app in Vscode Terminal:
+```
+Check who own the node_modules:
+```bash 
+ls -la /usr/local/lib/node_modules
+```
+Change the ownership to my own username:
+```bash 
+sudo chown -R MYUSERNAME: /usr/local/lib/node_modules
+```
+Install needed dependencies in Vscode Terminal:
+```bash 
+yarn add @emotion/react @emotion/styled @mui/icons-material
+@mui/material axios react-router-dom
+```
+Audit all dependencies to the latest version:
+```bash 
+npm install --legacy-peer-deps
+```
+# Debugging & Troubleshooting 
+
 
 
 
