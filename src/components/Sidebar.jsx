@@ -31,5 +31,4 @@ const Categories = ({ selectedCategory, setSelectedCategory }) => (
         ))}
     </Stack>
 );
-
 export default Categories;
