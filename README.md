@@ -57,8 +57,27 @@ My replica to YouTube App, one of the largest online video streaming and sharing
 ### Download `npm version 5.6.1 or higher` after installing node.
 ### To check your version of npm, run: `npm --version`
 ### Download the entire project folder and open it with any IDE.
-### Obtain a free YouTube API Key at https://rapidapi.com/ytdlfree/api/youtube-v31
-### Replace `YOUR OWN YOUTUBE KEY` in fetchFromAPI.js with you obtained API key. 
+Create a file named `fetchFromAPI.js` in `src/utils`<br/>
+Obtain a free YouTube API Key at https://rapidapi.com/ytdlfree/api/youtube-v31
+Replace `YOUR OWN YOUTUBE KEY` in fetchFromAPI.js with you obtained API key:
+```javascript
+import axios from 'axios';
+
+export const BASE_URL = 'https://youtube-v31.p.rapidapi.com';
+const options = {
+  params: {
+    maxResults: 50,
+  },
+  headers: {
+    'X-RapidAPI-Key': 'YOUR OWN YOUTUBE API KEY',
+    'X-RapidAPI-Host': 'youtube-v31.p.rapidapi.com',
+  },
+};
+export const fetchFromAPI = async (url) => {
+  const { data } = await axios.get(`${BASE_URL}/${url}`, options);
+  return data;
+};
+```
 ### Fetch your API in RapidAPI Client Vscode extension until it shows `200 OK`
 ### Start the webserver to test KTube App by running: `npm start` at localhost:3000
 ### Terminate the server by CONTROL+C
@@ -175,7 +194,7 @@ justifyContent: 'center',
 Now the video page fetched based on categories successfully!<br/> 
 [videos of categories fetched.PNG](https://github.com/KrystalZhang612/KrystalZhang-KTube-App-YouTube2.0/blob/main/testing-result-k-tube-app/videos%20of%20categories%20fetched.PNG)<br/>
 ## ***ChannelDetails Customization:***
-Fetch chanel details and API data in [ChannelDetail.jsx](https://github.com/KrystalZhang612/KrystalZhang-KTube-App-YouTube2.0/blob/main/src/components/ChannelDetail.jsx):
+Fetch channel details and API data in [ChannelDetail.jsx](https://github.com/KrystalZhang612/KrystalZhang-KTube-App-YouTube2.0/blob/main/src/components/ChannelDetail.jsx):
 ```JavaScript 
  useEffect(() => {
     const fetchResults = async () => {
